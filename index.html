@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO & Social Sharing -->
+    <title>R Ranji Master Cash Agent</title>
+    <meta name="description" content="1xbet | Melbet | Win Win | 888starz | GoldPari | Mosbet | PariPulse | Coldbet | Dbbet | Linebet Fast Deposits and Withdrawals Service.">
+    <meta property="og:title" content="R Ranji Master Cash Agent">
+    <meta property="og:image" content="https://i.postimg.cc/d0KH9J36/1001103932.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/d0KH9J36/1001103932.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            /* ORIGINAL BLUE THEME */
+            --primary-bg: #0f1028;
+            --secondary-bg: #2a2d6e;
+            --card-bg: rgba(30, 32, 75, 0.75);
+            --text-light: #ffffff;
+            --text-medium: #cfcfcf;
+            --accent-green: #00c853; 
+            --border-color: rgba(255, 255, 255, 0.15);
+            --hover-bg: rgba(255, 255, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* =========================
+           SCROLL FIX START
+           ========================= */
+        html {
+            background-color: #090a1a;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #1a1c5a 0%, #090a1a 100%);
+            min-height: 100vh;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem 1rem;
+            overflow-x: hidden;
+        }
+        /* =========================
+           SCROLL FIX END
+           ========================= */
+
+        /* =========================================
+           INTRO ANIMATION STYLES
+           ========================================= */
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(160deg, #1a1c5a 0%, #090a1a 100%);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease-out;
+        }
+
+        #intro-logo {
+            width: 100px;
+            opacity: 0;
+            animation: zoomLogo 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes zoomLogo {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: scale(2.5); opacity: 1; }
+        }
+
+        .intro-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* =========================================
+           MAIN APP STYLES
+           ========================================= */
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInContent 1s ease 2.2s forwards;
+            opacity: 0; 
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeInContent {
+            to { opacity: 1; }
+        }
+
+        /* Header Logos */
+        .top-logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2rem;
+            padding-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .top-logo-header img {
+            height: 40px; /* Logo Height 40px */
+            width: auto;
+            opacity: 0.9;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            border-radius: 5px;
+        }
+
+        /* Main Card */
+        .main-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 1.5rem;
+            padding: 2rem 1.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem; /* Top margin since header logos removed */
+        }
+        
+        /* Profile Section */
+        .profile-header {
+            text-align: center;
+        }
+
+        .profile-pic-wrapper {
+            position: relative;
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 2;
+            border: 3px solid rgba(255,255,255,0.1);
+        }
+        
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .online-status-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px; 
+            background-color: var(--accent-green);
+            color: #fff;
+            font-size: 0.55rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 50px;
+            border: 3px solid #26285a;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 5;
+            letter-spacing: 0.5px;
+        }
+
+        /* Title Area */
+        .profile-title {
+            font-size: 1.35rem; 
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap; 
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .verify-badge {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+
+        .profile-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        /* Review Buttons */
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+        
+        .btn-small {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 0.4rem 1rem;
+            text-decoration: none;
+            color: var(--text-medium);
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: 0.3s;
+        }
+
+        .btn-small:hover {
+            background: var(--hover-bg);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+            margin: 0.5rem 0;
+        }
+        
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+        
+        .btn-contact, button.btn-contact {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 0.85rem;
+            border-radius: 0.8rem;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: 0.3s;
+            cursor: pointer;
+            width: 100%;
+            font-family: inherit;
+            text-align: left;
+        }
+
+        .btn-contact:hover {
+            background: var(--hover-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-contact i {
+            font-size: 1.3rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        /* LOGO COLLECTION (Below Contact Buttons) */
+        .logo-collection {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            background: rgba(0,0,0,0.1);
+            border-radius: 1rem;
+        }
+
+        .logo-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-row img {
+            height: 40px;
+            width: auto;
+            opacity: 0.9;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            border-radius: 5px;
+        }
+
+        /* Full Width Buttons (Quick Reg) */
+        .btn-full {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 0.8rem;
+            border-radius: 0.8rem;
+            text-decoration: none;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .btn-full:hover {
+            background: var(--hover-bg);
+            transform: translateY(-2px);
+        }
+
+        /* INCREASED LOGO SIZE FOR REGISTRATION BUTTONS */
+        .btn-full img {
+            height: 48px; /* Increased to 48px */
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Promo Section */
+        .info-text {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+            padding: 0 0.5rem;
+        }
+
+        /* Promo Code Box */
+        .promo-box {
+            background: linear-gradient(90deg, rgba(43, 88, 209, 0.2), rgba(43, 88, 209, 0.4));
+            border: 1px solid rgba(43, 88, 209, 0.5);
+            border-radius: 0.8rem;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .promo-box:hover {
+            background: linear-gradient(90deg, rgba(43, 88, 209, 0.3), rgba(43, 88, 209, 0.5));
+        }
+
+        .promo-box:active {
+            transform: scale(0.97);
+        }
+
+        .promo-code {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-medium);
+        }
+
+        .promo-code span span {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .promo-box .copy-icon {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+        }
+
+        /* Toast Notification */
+        #toast {
+            visibility: hidden;
+            min-width: 200px;
+            background-color: #202124;
+            color: #fff;
+            text-align: center;
+            border-radius: 50px;
+            padding: 12px;
+            position: fixed;
+            z-index: 2000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-medium);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+        }
+
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            background: rgba(0,0,0,0.2);
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-info p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        /* COPYRIGHT FOOTER STYLES */
+        .copyright-text {
+            text-align: center;
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 1.5rem;
+            padding-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .dev-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .dev-link:hover {
+            color: var(--accent-green);
+            text-decoration: underline;
+        }
+
+        /* ============================
+           MODAL STYLES (SHARED)
+           ============================ */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(35, 40, 100, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            width: 100%;
+            max-width: 400px;
+            background: linear-gradient(145deg, #2a2d6e, #121432);
+            border-radius: 1.5rem;
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.8rem;
+        }
+
+        .modal-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0 0.5rem;
+            transition: 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #fff;
+        }
+        
+        .bank-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .bank-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .bank-top {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bank-logo {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            padding: 4px;
+        }
+
+        .bank-name-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        /* Account Number Box - Blue Background */
+        .acc-details-box {
+            background: rgba(42, 45, 110, 0.6);
+            padding: 0.8rem;
+            border-radius: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .acc-number {
+            font-family: 'Poppins', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            letter-spacing: 1px;
+        }
+
+        /* Button Style */
+        .btn-copy-bank {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+
+        .btn-copy-bank:hover {
+            background: rgba(255,255,255,0.25);
+        }
+        
+        /* Extra Details */
+        .bank-extra-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-left: 0.4rem;
+        }
+
+        .detail-row {
+            font-size: 0.85rem;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            cursor: pointer;
+            padding: 4px 6px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .detail-row:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .detail-row i {
+            width: 16px;
+            text-align: center;
+            color: var(--text-medium);
+        }
+        
+        .detail-row span {
+            color: #fff;
+            font-weight: 500;
+            margin-right: auto;
+        }
+
+        .small-copy-icon {
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- =========================================
+         INTRO SCREEN OVERLAY
+         ========================================= -->
+    <div id="intro-overlay">
+        <img src="https://i.postimg.cc/d0KH9J36/1001103932.png" alt="Nishan Service Logo" id="intro-logo">
+    </div>
+
+    <div class="container">
+        
+        <!-- (Top Logo Header Removed - Moved to Bottom) -->
+
+        <main class="main-card">
+            
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-pic-wrapper">
+                    <div class="profile-pic">
+                        <img src="https://i.postimg.cc/d0KH9J36/1001103932.png" alt="R Ranji Master Cash Agent">
+                    </div>
+                    
+                    <!-- Online Status Badge -->
+                    <div class="online-status-badge">
+                         Online
+                    </div>
+                </div>
+                
+                <h1 class="profile-title">
+                    R Ranji Master Cash Agent
+                    <img src="https://i.postimg.cc/RVx9wTg2/1001086957.png" alt="Verified" class="verify-badge">
+                </h1>
+                
+                <p class="profile-subtitle">R Ranji</p>
+
+                <div class="profile-links">
+                    <a href="https://www.facebook.com/share/19wF92AdmF/" target="_blank" rel="noopener noreferrer" class="btn-small"><i class="fa-regular fa-comment-dots" style="color: #1877F2;"></i> Reviews</a>
+                    <a href="https://www.youtube.com/@RRanjiofficial" target="_blank" rel="noopener noreferrer" class="btn-small"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube</a>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <!-- Contact Buttons -->
+            <section class="contact-grid">
+                <!-- 1. WhatsApp 1 -->
+                <a href="https://wa.me/+94726046605" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+                
+                <!-- 2. WhatsApp 2 -->
+                <a href="https://wa.me/+94760929288" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+                
+                <!-- 3. Telegram -->
+                <a href="https://t.me/Rayanmelbet" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-telegram" style="color:#229ED9;"></i> Telegram</a>
+                
+                <!-- 4. Call -->
+                <a href="tel:0764659288" class="btn-contact"><i class="fa-solid fa-phone" style="color:#34B7F1;"></i> Call</a>
+                
+                <!-- 5. Email -->
+                <a href="mailto:rranjirranji99@gmail.com" class="btn-contact"><i class="fa-regular fa-envelope" style="color:#EA4335;"></i> Email</a>
+                
+                <!-- 6. Bank Button -->
+                <button onclick="openBankModal()" class="btn-contact"><i class="fa-solid fa-building-columns" style="color:#229ED9;"></i> Bank</button>
+                
+                <!-- 7. Facebook -->
+                <a href="https://wa.me/+94726046605" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-facebook" style="color:#1877F2;"></i> Facebook</a>
+                
+                <!-- 8. Withdrawal -->
+                <button onclick="openWithdrawModal()" class="btn-contact"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal</button>
+            </section>
+            
+            <hr>
+
+            <!-- LOGO COLLECTION (Below Contact Buttons) -->
+            <div class="logo-collection">
+                <!-- Top Row (Major) -->
+                <div class="logo-row">
+                    <img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet">
+                    <img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet">
+                    <img src="https://i.postimg.cc/63kj3Zgz/1001104002.png" alt="Winwin">
+                </div>
+                
+                <!-- Middle Row (Secondary) -->
+                <div class="logo-row">
+                    <img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz">
+                    <img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet">
+                    <img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse">
+                </div>
+
+                <!-- Bottom Row (Tertiary) -->
+                <div class="logo-row">
+                    <img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet">
+                    <img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet">
+                    <img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Promo Section -->
+            <section class="info-text">
+                <p>1xbet | Melbet | Win Win | 888starz | GoldPari | Mosbet | PariPulse | Coldbet | Dbbet | Linebet | සඳහා ඉක්මන් මුදල් තැන්පතු සහ ලබාගැනීම්.</p>
+                <p style="margin-top: 0.5rem; color: var(--text-light);">නව ගිණුමක් සාදන ඔබට මෙම ප්‍රමෝකෝඩ් එක භාවිතා කල හැක</p>
+            </section>
+
+            <!-- Promo Box -->
+            <div class="promo-box" onclick="copyToClipboard('RRANJI', this)" >
+                <div class="promo-code">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>Promo Code : <span>RRANJI</span></span>
+                </div>
+                <i class="fa-regular fa-copy copy-icon"></i>
+            </div>
+            
+            <!-- Registration Links (Icon Only - 48px) -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-link"></i> Quick Registration</h2>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet"></a>
+                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz"></a>
+                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet"></a>
+                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse"></a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section class="footer-info">
+                <p><i class="fa-regular fa-circle-check" style="color: var(--accent-green);"></i> වේගවත් සහ ආරක්ෂිතයි.</p>
+                <p><i class="fa-regular fa-circle-check" style="color: var(--accent-green);"></i> 100% විශ්වාසයි.</p>
+                <p><i class="fa-solid fa-gift" style="color: #FFD700;"></i> පළමු තැන්පතුවට 2% Cash Back!</p>
+                <p style="font-weight: 600; color: var(--text-light); margin-top: 0.5rem;">අදම සම්බන්ධ වන්න.</p>
+            </section>
+
+            <!-- Developer Footer Note -->
+            <div class="copyright-text">
+                <p>Professional Cash Services💼</p>
+                <p>© 2025 R Ranji Master Cash Agent  All Rights Reserved.</p>
+                <p>Developed By <a href="https://t.me/virat1xbet" target="_blank" class="dev-link">cnaepiclk.com</a></p>
+            </div>
+        </main>
+    </div>
+    
+    <!-- BANK DETAILS POPUP MODAL -->
+    <div id="bankModal" class="modal-overlay" onclick="closeBankModal(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-wallet"></i> Bank Details</div>
+                <button class="close-btn" onclick="closeBankModalBtn()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="bank-list">
+                <!-- 1. iPay -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/cLBg6kmg/1001100468.jpg" alt="iPay" class="bank-logo">
+                        <span class="bank-name-title">iPay</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">0726046605</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('0726046605', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R Ranji', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R Ranji</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. BOC -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/8zNs8BVh/1001100467.jpg" alt="BOC" class="bank-logo">
+                        <span class="bank-name-title">Bank of Ceylon</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">95395687</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('95395687', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R W S A PRASHAD</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-location-dot"></i> Branch: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. People's Bank -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/nzyc3qkv/1001100473.jpg" alt="Peoples Bank" class="bank-logo">
+                        <span class="bank-name-title">People's Bank</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">037200780013817</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('037200780013817', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R W S A PRASHAD</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-location-dot"></i> Branch: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4. NSB Bank -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/SNHnqpd0/1001105317.jpg" alt="NSB" class="bank-logo">
+                        <span class="bank-name-title">NSB Bank</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">300110188726</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('300110188726', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R W S A PRASHAD</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-location-dot"></i> Branch: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5. Sampath Bank -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/44SdbTr3/1001105324.jpg" alt="Sampath" class="bank-logo">
+                        <span class="bank-name-title">Sampath Bank</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">104655209763</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('104655209763', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R W S A PRASHAD</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-location-dot"></i> Branch: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. Binance -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/gJcJ4czb/1001105318.jpg" alt="Binance" class="bank-logo">
+                        <span class="bank-name-title">Binance</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">985422926</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('985422926', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('985422926', this)">
+                            <i class="fa-regular fa-id-card"></i> ID: <span>Binance ID</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7. Ez Cash -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/j5RW9Qh9/1001105316.jpg" alt="Ez Cash" class="bank-logo">
+                        <span class="bank-name-title">Ez Cash</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">0760929288</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('0760929288', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('R Ranji', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R Ranji</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BANK MODAL -->
+
+    <!-- WITHDRAWAL DETAILS MODAL -->
+    <div id="withdrawModal" class="modal-overlay" onclick="closeWithdrawModal(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal Details</div>
+                <button class="close-btn" onclick="closeWithdrawModalBtn()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="bank-list">
+                
+                <!-- 1xBet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet" class="bank-logo">
+                        <span class="bank-name-title">1xBet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('R.Ranji and R.Ravi', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>R.Ranji and R.Ravi</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Melbet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet" class="bank-logo">
+                        <span class="bank-name-title">Melbet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela, Galahitiyava Road', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>Bandarawela, Galahitiyava Road</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Winwin -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/63kj3Zgz/1001104002.png" alt="Winwin" class="bank-logo">
+                        <span class="bank-name-title">Winwin Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('R.Ranji and  R .Ravi', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>R.Ranji and  R .Ravi</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 888starz -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz" class="bank-logo">
+                        <span class="bank-name-title">888starz Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('R.Ranji and R.Ravi', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>R.Ranji and R.Ravi</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GoldPari -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/hGtrssVq/1001103956.webp" alt="GoldPari" class="bank-logo">
+                        <span class="bank-name-title">GoldPari Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('R.Ranji and R.Ravi', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>R.Ranji and R.Ravi</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dbbet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet" class="bank-logo">
+                        <span class="bank-name-title">Dbbet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row" onclick="copyToClipboard('Bandarawela', this)">
+                            <i class="fa-solid fa-city"></i> City: <span>Bandarawela</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                        <div class="detail-row" onclick="copyToClipboard('R Ranji master cash agents', this)">
+                            <i class="fa-solid fa-road"></i> Street: <span>R Ranji master cash agents</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mostbet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet" class="bank-logo">
+                        <span class="bank-name-title">Mostbet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row">
+                            <i class="fa-solid fa-city"></i> City: <span>Loading...</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fa-solid fa-road"></i> Street: <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PariPulse -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse" class="bank-logo">
+                        <span class="bank-name-title">PariPulse Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row">
+                            <i class="fa-solid fa-city"></i> City: <span>Loading...</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fa-solid fa-road"></i> Street: <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coldbet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet" class="bank-logo">
+                        <span class="bank-name-title">Coldbet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row">
+                            <i class="fa-solid fa-city"></i> City: <span>Loading...</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fa-solid fa-road"></i> Street: <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linebet -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet" class="bank-logo">
+                        <span class="bank-name-title">Linebet Cash</span>
+                    </div>
+                    <div class="bank-extra-details" style="margin-top: 10px;">
+                        <div class="detail-row">
+                            <i class="fa-solid fa-city"></i> City: <span>Loading...</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fa-solid fa-road"></i> Street: <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END WITHDRAWAL MODAL -->
+
+    <div id="toast">Copied to Clipboard!</div>
+
+    <script>
+        // ============================
+        // INTRO LOGIC
+        // ============================
+        window.addEventListener('load', () => {
+            const introOverlay = document.getElementById('intro-overlay');
+            
+            // Wait for 2.5 seconds (animation duration) then fade out
+            setTimeout(() => {
+                introOverlay.classList.add('intro-hidden');
+            }, 2500);
+        });
+
+        // Universal Copy Function
+        function copyToClipboard(text, element) {
+            let icon;
+            
+            // Handle clicks on the div (detail-row)
+            if(element.classList.contains('detail-row')) {
+                icon = element.querySelector('.small-copy-icon');
+            } 
+            // Handle button click (btn-copy-bank)
+            else if(element.classList.contains('btn-copy-bank')) {
+                icon = element.querySelector('i');
+            }
+            else if(element.classList.contains('copy-icon')) {
+                icon = element;
+            } else if (element.querySelector('.copy-icon')) {
+                icon = element.querySelector('.copy-icon');
+            } else if (element.querySelector('i')) {
+                icon = element.querySelector('i');
+            } else {
+                icon = element;
+            }
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showToastAndIcon(icon, text);
+                }).catch(err => {
+                    fallbackCopyTextToClipboard(text, icon);
+                });
+            } else {
+                fallbackCopyTextToClipboard(text, icon);
+            }
+        }
+
+        function fallbackCopyTextToClipboard(text, icon) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToastAndIcon(icon, text);
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showToastAndIcon(icon, text) {
+            if(!icon) return; 
+
+            const originalClass = icon.className;
+            
+            if(icon.classList.contains('small-copy-icon')) {
+                icon.className = "fa-solid fa-check small-copy-icon";
+            } else {
+                icon.className = "fa-solid fa-check";
+            }
+            
+            icon.style.color = "#25d366";
+            icon.style.opacity = "1";
+
+            const toast = document.getElementById("toast");
+            
+            if(text.length > 15) {
+                toast.textContent = "Copied to Clipboard!";
+            } else {
+                toast.textContent = '"' + text + '" Copied!';
+            }
+            
+            toast.className = "show";
+            
+            setTimeout(function(){ 
+                toast.className = toast.className.replace("show", ""); 
+                icon.className = originalClass;
+                icon.style.color = "";
+                icon.style.opacity = "";
+            }, 2000);
+        }
+
+        // Bank Modal Logic
+        function openBankModal() {
+            document.getElementById("bankModal").style.display = "flex";
+            document.body.style.overflow = "hidden"; 
+        }
+
+        function closeBankModalBtn() {
+            document.getElementById("bankModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        function closeBankModal(event) {
+            if (event.target.id === "bankModal") {
+                document.getElementById("bankModal").style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Withdrawal Modal Logic (Similar to Bank Modal)
+        function openWithdrawModal() {
+            document.getElementById("withdrawModal").style.display = "flex";
+            document.body.style.overflow = "hidden"; 
+        }
+
+        function closeWithdrawModalBtn() {
+            document.getElementById("withdrawModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        function closeWithdrawModal(event) {
+            if (event.target.id === "withdrawModal") {
+                document.getElementById("withdrawModal").style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+
+</body>
+</html>
