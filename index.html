@@ -296,31 +296,48 @@
             text-align: center;
         }
 
-        /* LOGO COLLECTION (Below Contact Buttons) */
-        .logo-collection {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
+        /* IMAGE SLIDER (REPLACED OLD LOGO COLLECTION) */
+        .image-slider-container {
+            position: relative;
+            width: 100%;
+            height: 180px; /* Adjust height as needed */
             margin: 0.5rem 0;
-            padding: 0.8rem;
-            background: rgba(0,0,0,0.1);
             border-radius: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
-        .logo-row {
+        .slide-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide-image.active {
+            opacity: 1;
+        }
+
+        /* NEW LOGO GRID (IN PROMO SECTION) */
+        .new-logo-grid {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
-        .logo-row img {
-            height: 40px;
+        .new-logo-grid img {
+            height: 30px;
             width: auto;
             opacity: 0.9;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-            border-radius: 5px;
+            filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+            border-radius: 4px;
         }
 
         /* Full Width Buttons (Quick Reg) */
@@ -765,39 +782,31 @@
             
             <hr>
 
-            <!-- LOGO COLLECTION (Below Contact Buttons) -->
-            <div class="logo-collection">
-                <!-- Top Row (Major) -->
-                <div class="logo-row">
-                    <img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet">
-                    <img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet">
-                    <img src="https://i.postimg.cc/63kj3Zgz/1001104002.png" alt="Winwin">
-                </div>
-                
-                <!-- Middle Row (Secondary) -->
-                <div class="logo-row">
-                    <img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz">
-                    <img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet">
-                    <img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse">
-                    <!-- GoldPari Removed From Here -->
-                </div>
-
-                <!-- Bottom Row (Tertiary) -->
-                <div class="logo-row">
-                    <img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet">
-                    <img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet">
-                    <img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet">
-                    <!-- GoldPari Moved Here -->
-                    <img src="https://i.postimg.cc/hGtrssVq/1001103956.webp" alt="GoldPari">
-                </div>
+            <!-- IMAGE SLIDER (Replaced Logo Collection) -->
+            <div class="image-slider-container">
+                <img src="https://i.postimg.cc/qRgyGLDd/1001107884.jpg" class="slide-image active" alt="Slide 1">
+                <img src="https://i.postimg.cc/26b3B0Tj/1001107885.jpg" class="slide-image" alt="Slide 2">
             </div>
 
             <hr>
 
-            <!-- Promo Section -->
+            <!-- Promo Section WITH LOGOS -->
             <section class="info-text">
-                <p>1xbet | Melbet | Win Win | 888starz | GoldPari | Mosbet | PariPulse | Coldbet | Dbbet | Linebet | සඳහා ඉක්මන් මුදල් තැන්පතු සහ ලබාගැනීම්.</p>
-                <p style="margin-top: 0.5rem; color: var(--text-light);">නව ගිණුමක් සාදන ඔබට මෙම ප්‍රමෝකෝඩ් එක භාවිතා කල හැක</p>
+                <!-- New Logo Grid Replaces Text -->
+                <div class="new-logo-grid">
+                    <img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet">
+                    <img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet">
+                    <img src="https://i.postimg.cc/63kj3Zgz/1001104002.png" alt="Winwin">
+                    <img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz">
+                    <img src="https://i.postimg.cc/hGtrssVq/1001103956.webp" alt="GoldPari">
+                    <img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet">
+                    <img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse">
+                    <img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet">
+                    <img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet">
+                    <img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet">
+                </div>
+                <p style="margin-top: 0.5rem; color: var(--text-light);">සඳහා ඉක්මන් මුදල් තැන්පතු සහ ලබාගැනීම්.</p>
+                <p style="margin-top: 0.8rem; color: var(--text-medium); font-size: 0.8rem;">නව ගිණුමක් සාදන ඔබට මෙම ප්‍රමෝකෝඩ් එක භාවිතා කල හැක</p>
             </section>
 
             <!-- Promo Box -->
@@ -1195,6 +1204,25 @@
                 introOverlay.classList.add('intro-hidden');
             }, 2500);
         });
+
+        // SLIDER LOGIC
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide-image');
+        
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].classList.add('active');
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+
+        // Start Slider if images exist
+        if(slides.length > 0) {
+            showSlides();
+        }
 
         // Universal Copy Function
         function copyToClipboard(text, element) {
