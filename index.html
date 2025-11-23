@@ -32,6 +32,7 @@
             --accent-green: #00c853; 
             --border-color: rgba(255, 255, 255, 0.15);
             --hover-bg: rgba(255, 255, 255, 0.15);
+            --gold-color: #FFD700;
         }
 
         * {
@@ -334,9 +335,15 @@
             align-items: center;
             justify-content: center;
             transition: 0.3s;
+            cursor: pointer; /* Default pointer for links */
         }
 
-        .btn-full:hover {
+        /* For inactive buttons */
+        .btn-full-inactive {
+            cursor: default;
+        }
+
+        .btn-full:hover:not(.btn-full-inactive) {
             background: var(--hover-bg);
             transform: translateY(-2px);
         }
@@ -389,9 +396,18 @@
             color: var(--text-medium);
         }
 
-        .promo-code span span {
-            font-weight: 700;
-            color: #fff;
+        /* GLOWING TEXT ANIMATION */
+        @keyframes gold-glow-anim {
+            0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #B8860B; }
+            50% { text-shadow: 0 0 20px #FFD700, 0 0 30px #B8860B; }
+            100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #B8860B; }
+        }
+
+        .promo-glow {
+            font-weight: 800;
+            color: var(--gold-color) !important;
+            animation: gold-glow-anim 2s infinite alternate;
+            letter-spacing: 1px;
         }
 
         .promo-box .copy-icon {
@@ -734,11 +750,11 @@
                 <!-- 6. Bank Button -->
                 <button onclick="openBankModal()" class="btn-contact"><i class="fa-solid fa-building-columns" style="color:#229ED9;"></i> Bank</button>
                 
-                <!-- 7. Facebook -->
-                <a href="https://wa.me/+94726046605" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-facebook" style="color:#1877F2;"></i> Facebook</a>
+                <!-- 7. Facebook (Updated Link) -->
+                <a href="https://www.facebook.com/share/19wF92AdmF/" target="_blank" rel="noopener noreferrer" class="btn-contact"><i class="fa-brands fa-facebook" style="color:#1877F2;"></i> Facebook</a>
                 
-                <!-- 8. Withdrawal -->
-                <button onclick="openWithdrawModal()" class="btn-contact"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal</button>
+                <!-- 8. Withdrawal Address (Updated Name) -->
+                <button onclick="openWithdrawModal()" class="btn-contact" style="font-size: 0.8rem;"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal Address</button>
             </section>
             
             <hr>
@@ -757,6 +773,7 @@
                     <img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz">
                     <img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet">
                     <img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse">
+                    <!-- GoldPari Removed From Here -->
                 </div>
 
                 <!-- Bottom Row (Tertiary) -->
@@ -764,6 +781,8 @@
                     <img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet">
                     <img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet">
                     <img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet">
+                    <!-- GoldPari Moved Here -->
+                    <img src="https://i.postimg.cc/hGtrssVq/1001103956.webp" alt="GoldPari">
                 </div>
             </div>
 
@@ -779,19 +798,44 @@
             <div class="promo-box" onclick="copyToClipboard('RRANJI', this)" >
                 <div class="promo-code">
                     <i class="fa-solid fa-ticket"></i>
-                    <span>Promo Code : <span>RRANJI</span></span>
+                    <span>Promo Code : <span class="promo-glow">RRANJI</span></span>
                 </div>
                 <i class="fa-regular fa-copy copy-icon"></i>
             </div>
             
-            <!-- Registration Links (Icon Only - 48px) -->
+            <!-- Registration Links (ALL LOGOS ADDED - LINKS UPDATED) -->
             <section>
                 <h2 class="section-title"><i class="fa-solid fa-link"></i> Quick Registration</h2>
                 <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
-                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet"></a>
-                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz"></a>
-                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet"></a>
-                    <a href="https://reffpa.com/L?tag=d_4662170m_97c_&site=4662170&ad=97" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse"></a>
+                    <!-- 1xbet -->
+                    <a href="https://affpa.top/L?tag=d_3661823m_1236c_&site=3661823&ad=1236" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" alt="1xBet"></a>
+                    
+                    <!-- Melbet -->
+                    <a href="https://melbet-srilanka.com/en" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" alt="Melbet"></a>
+                    
+                    <!-- Winwin -->
+                    <a href="https://refpa43000.com/L?tag=d_4580409m_68383c_&site=4580409&ad=68383" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/63kj3Zgz/1001104002.png" alt="Winwin"></a>
+                    
+                    <!-- 888starz -->
+                    <a href="https://bonusweb.org/L?tag=d_3733444m_63543c_&site=3733444&ad=63543" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/s1FLMBv0/1001086974.png" alt="888starz"></a>
+                    
+                    <!-- GoldPari -->
+                    <a href="https://gpaff.top/L?tag=d_3998205m_69627c_&site=3998205&ad=69627" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/hGtrssVq/1001103956.webp" alt="GoldPari"></a>
+                    
+                    <!-- Mostbet -->
+                    <a href="https://mostbet-sri-lanka.com/en/app/" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/c4GB20f9/1001103957.png" alt="Mostbet"></a>
+                    
+                    <!-- PariPulse -->
+                    <a href="https://refpa00186.com/L?tag=d_4634145m_64499c_&site=4634145&ad=64499&r=promotions/first-deposit" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/TYR74Xn7/1001086979.png" alt="PariPulse"></a>
+                    
+                    <!-- Coldbet -->
+                    <a href="https://coldredir.com/L?tag=d_4780204m_126631c_&site=4780204&ad=126631" target="_blank" rel="noopener noreferrer" class="btn-full"><img src="https://i.postimg.cc/bY4LH16L/1001103982.png" alt="Coldbet"></a>
+                    
+                    <!-- Dbbet (No Link) -->
+                    <a href="javascript:void(0)" class="btn-full btn-full-inactive"><img src="https://i.postimg.cc/8CCnnNLM/1001103999.png" alt="Dbbet"></a>
+                    
+                    <!-- Linebet (No Link) -->
+                    <a href="javascript:void(0)" class="btn-full btn-full-inactive"><img src="https://i.postimg.cc/pXThTSQ1/1001104005.png" alt="Linebet"></a>
                 </div>
             </section>
 
@@ -820,23 +864,8 @@
                 <button class="close-btn" onclick="closeBankModalBtn()"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="bank-list">
-                <!-- 1. iPay -->
-                <div class="bank-item">
-                    <div class="bank-top">
-                        <img src="https://i.postimg.cc/cLBg6kmg/1001100468.jpg" alt="iPay" class="bank-logo">
-                        <span class="bank-name-title">iPay</span>
-                    </div>
-                    <div class="acc-details-box">
-                        <span class="acc-number">0726046605</span>
-                        <button class="btn-copy-bank" onclick="copyToClipboard('0726046605', this)"><i class="fa-regular fa-copy"></i></button>
-                    </div>
-                    <div class="bank-extra-details">
-                        <div class="detail-row" onclick="copyToClipboard('R Ranji', this)">
-                            <i class="fa-regular fa-user"></i> Name: <span>R Ranji</span> <i class="fa-regular fa-copy small-copy-icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2. BOC -->
+                
+                <!-- 1. BOC -->
                 <div class="bank-item">
                     <div class="bank-top">
                         <img src="https://i.postimg.cc/8zNs8BVh/1001100467.jpg" alt="BOC" class="bank-logo">
@@ -855,7 +884,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- 3. People's Bank -->
+
+                <!-- 2. People's Bank -->
                 <div class="bank-item">
                     <div class="bank-top">
                         <img src="https://i.postimg.cc/nzyc3qkv/1001100473.jpg" alt="Peoples Bank" class="bank-logo">
@@ -874,7 +904,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- 4. NSB Bank -->
+
+                <!-- 3. NSB Bank -->
                 <div class="bank-item">
                     <div class="bank-top">
                         <img src="https://i.postimg.cc/SNHnqpd0/1001105317.jpg" alt="NSB" class="bank-logo">
@@ -893,7 +924,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- 5. Sampath Bank -->
+
+                <!-- 4. Sampath Bank -->
                 <div class="bank-item">
                     <div class="bank-top">
                         <img src="https://i.postimg.cc/44SdbTr3/1001105324.jpg" alt="Sampath" class="bank-logo">
@@ -912,23 +944,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- 6. Binance -->
+
+                <!-- 5. iPay -->
                 <div class="bank-item">
                     <div class="bank-top">
-                        <img src="https://i.postimg.cc/gJcJ4czb/1001105318.jpg" alt="Binance" class="bank-logo">
-                        <span class="bank-name-title">Binance</span>
+                        <img src="https://i.postimg.cc/cLBg6kmg/1001100468.jpg" alt="iPay" class="bank-logo">
+                        <span class="bank-name-title">iPay</span>
                     </div>
                     <div class="acc-details-box">
-                        <span class="acc-number">985422926</span>
-                        <button class="btn-copy-bank" onclick="copyToClipboard('985422926', this)"><i class="fa-regular fa-copy"></i></button>
+                        <span class="acc-number">0726046605</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('0726046605', this)"><i class="fa-regular fa-copy"></i></button>
                     </div>
                     <div class="bank-extra-details">
-                        <div class="detail-row" onclick="copyToClipboard('985422926', this)">
-                            <i class="fa-regular fa-id-card"></i> ID: <span>Binance ID</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        <div class="detail-row" onclick="copyToClipboard('R Ranji', this)">
+                            <i class="fa-regular fa-user"></i> Name: <span>R Ranji</span> <i class="fa-regular fa-copy small-copy-icon"></i>
                         </div>
                     </div>
                 </div>
-                <!-- 7. Ez Cash -->
+
+                <!-- 6. Ez Cash -->
                 <div class="bank-item">
                     <div class="bank-top">
                         <img src="https://i.postimg.cc/j5RW9Qh9/1001105316.jpg" alt="Ez Cash" class="bank-logo">
@@ -944,6 +978,24 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 7. Binance -->
+                <div class="bank-item">
+                    <div class="bank-top">
+                        <img src="https://i.postimg.cc/gJcJ4czb/1001105318.jpg" alt="Binance" class="bank-logo">
+                        <span class="bank-name-title">Binance</span>
+                    </div>
+                    <div class="acc-details-box">
+                        <span class="acc-number">985422926</span>
+                        <button class="btn-copy-bank" onclick="copyToClipboard('985422926', this)"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <div class="bank-extra-details">
+                        <div class="detail-row" onclick="copyToClipboard('985422926', this)">
+                            <i class="fa-regular fa-id-card"></i> ID: <span>Binance ID</span> <i class="fa-regular fa-copy small-copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
