@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>R Ranji Master Cash Agent</title>
+    
+    <!-- Meta Tags -->
     <meta property="og:title" content="R Ranji Master Cash Agent">
     <meta property="og:image" content="https://i.postimg.cc/d0KH9J36/1001103932.png">
     <link rel="icon" type="image/png" href="https://i.postimg.cc/d0KH9J36/1001103932.png">
+    
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,15 +22,14 @@
         html { background-color: #090a1a; height: 100%; }
         body { font-family: 'Poppins', sans-serif; background: linear-gradient(180deg, #1a1c5a 0%, #090a1a 100%); min-height: 100vh; color: var(--text-light); display: flex; flex-direction: column; align-items: center; padding: 1.5rem 1rem; overflow-x: hidden; }
         
-        /* Intro */
         #intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(160deg, #1a1c5a 0%, #090a1a 100%); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.8s ease-out; }
         #intro-logo { width: 100px; opacity: 0; animation: zoomLogo 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
         @keyframes zoomLogo { 0% { transform: scale(0.5); opacity: 0; } 50% { opacity: 1; } 100% { transform: scale(2.5); opacity: 1; } }
         .intro-hidden { opacity: 0; pointer-events: none; }
+        
         .container { width: 100%; max-width: 400px; position: relative; z-index: 1; animation: fadeInContent 1s ease 2.2s forwards; opacity: 0; margin-bottom: 20px; }
         @keyframes fadeInContent { to { opacity: 1; } }
 
-        /* Card & Profile */
         .main-card { background: var(--card-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 1.5rem; padding: 2rem 1.5rem; border: 1px solid var(--border-color); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; gap: 1.2rem; margin-top: 2rem; }
         .profile-header { text-align: center; }
         .profile-pic-wrapper { position: relative; width: 115px; height: 115px; margin: 0 auto 1rem auto; display: flex; justify-content: center; align-items: center; }
@@ -38,41 +41,44 @@
         .profile-subtitle { font-size: 0.95rem; color: var(--text-medium); font-weight: 400; letter-spacing: 0.5px; }
         .profile-links { display: flex; justify-content: center; gap: 0.8rem; margin: 1rem 0; }
         
-        /* Buttons */
         .btn-small { background: rgba(0, 0, 0, 0.2); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.4rem 1rem; text-decoration: none; color: var(--text-medium); font-size: 0.75rem; display: flex; align-items: center; gap: 0.4rem; transition: 0.3s; }
         .btn-small:hover { background: var(--hover-bg); color: #fff; transform: translateY(-2px); }
+        
         hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, var(--border-color), transparent); margin: 0.5rem 0; }
+        
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
         .btn-contact, button.btn-contact { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 0.85rem; border-radius: 0.8rem; text-decoration: none; color: var(--text-light); font-size: 0.9rem; display: flex; align-items: center; gap: 0.75rem; transition: 0.3s; cursor: pointer; width: 100%; font-family: inherit; text-align: left; }
         .btn-contact:hover { background: var(--hover-bg); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .btn-contact i { font-size: 1.3rem; width: 24px; text-align: center; }
         
-        /* Slider */
         .image-slider-container { position: relative; width: 100%; height: 180px; margin: 0.5rem 0; border-radius: 1rem; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
         .slide-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
         .slide-image.active { opacity: 1; }
         
-        /* Logos & Promo */
         .new-logo-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-bottom: 0.5rem; }
         .new-logo-grid img { height: 30px; width: auto; opacity: 0.9; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3)); border-radius: 4px; }
+        
         .btn-full { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 0.8rem; border-radius: 0.8rem; text-decoration: none; color: var(--text-light); display: flex; align-items: center; justify-content: center; transition: 0.3s; cursor: pointer; }
         .btn-full:hover { background: var(--hover-bg); transform: translateY(-2px); }
         .btn-full img { height: 48px; width: auto; object-fit: contain; }
+        
         .info-text { text-align: center; font-size: 0.85rem; color: var(--text-medium); line-height: 1.6; padding: 0 0.5rem; }
+        
         .promo-box { background: linear-gradient(90deg, rgba(43, 88, 209, 0.2), rgba(43, 88, 209, 0.4)); border: 1px solid rgba(43, 88, 209, 0.5); border-radius: 0.8rem; padding: 1rem; margin: 0.5rem 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: 0.2s; }
         .promo-box:active { transform: scale(0.97); }
         .promo-code { font-weight: 600; letter-spacing: 0.5px; font-size: 1rem; display: flex; align-items: center; gap: 0.8rem; color: var(--text-medium); }
         .promo-glow { font-weight: 800; color: var(--gold-color) !important; animation: gold-glow-anim 2s infinite alternate; letter-spacing: 1px; }
         @keyframes gold-glow-anim { 0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #B8860B; } 50% { text-shadow: 0 0 20px #FFD700, 0 0 30px #B8860B; } 100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #B8860B; } }
         
-        /* Toast & Modals */
         #toast { visibility: hidden; min-width: 200px; background-color: #202124; color: #fff; text-align: center; border-radius: 50px; padding: 12px; position: fixed; z-index: 2000; left: 50%; bottom: 30px; transform: translateX(-50%); font-size: 0.9rem; opacity: 0; transition: opacity 0.3s, bottom 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); }
         #toast.show { visibility: visible; opacity: 1; bottom: 50px; }
+        
         .section-title { text-align: center; font-weight: 600; color: var(--text-medium); display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1.5px; }
         .footer-info { display: flex; flex-direction: column; gap: 0.6rem; text-align: center; font-size: 0.85rem; color: var(--text-medium); background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 1rem; margin-top: 1rem; }
         .footer-info p { display: flex; align-items: center; justify-content: center; gap: 0.6rem; }
         .copyright-text { text-align: center; font-size: 0.65rem; color: rgba(255, 255, 255, 0.4); margin-top: 1.5rem; padding-bottom: 0.5rem; line-height: 1.4; }
         .dev-link { color: rgba(255, 255, 255, 0.6); text-decoration: none; font-weight: 600; transition: 0.3s; }
+        
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(35, 40, 100, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); z-index: 1000; display: none; justify-content: center; align-items: center; padding: 1rem; animation: fadeIn 0.3s ease; }
         .modal-content { width: 100%; max-width: 400px; background: linear-gradient(145deg, #2a2d6e, #121432); border-radius: 1.5rem; border: 1px solid var(--border-color); padding: 1.5rem; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.5); max-height: 90vh; overflow-y: auto; }
         .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.8rem; }
@@ -100,7 +106,7 @@
 
     <div class="container">
         <main class="main-card">
-            <!-- PROFILE -->
+            <!-- PROFILE (STATIC LINKS) -->
             <section class="profile-header">
                 <div class="profile-pic-wrapper">
                     <div class="profile-pic"><img id="main-logo" src="https://i.postimg.cc/d0KH9J36/1001103932.png" alt="Profile"></div>
@@ -109,30 +115,31 @@
                 <h1 class="profile-title">R Ranji Master Cash Agent <img src="https://i.postimg.cc/RVx9wTg2/1001086957.png" alt="Verified" class="verify-badge"></h1>
                 <p class="profile-subtitle">R Ranji</p>
                 <div class="profile-links">
-                    <a id="link-fb" href="https://www.facebook.com/share/19wF92AdmF/" target="_blank" class="btn-small"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i> Facebook</a>
-                    <a id="link-yt" href="https://www.youtube.com/@RRanjiofficial" target="_blank" class="btn-small"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube</a>
+                    <a href="https://www.facebook.com/share/19wF92AdmF/" target="_blank" class="btn-small"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i> Facebook</a>
+                    <a href="https://www.youtube.com/@RRanjiofficial" target="_blank" class="btn-small"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube</a>
                 </div>
             </section>
             
             <hr>
-            <a id="link-vid" href="#" class="btn-contact" style="margin-bottom: 0.8rem; justify-content: center; font-weight: 600;">
+            <a href="#" class="btn-contact" style="margin-bottom: 0.8rem; justify-content: center; font-weight: 600;">
                 <i class="fa-solid fa-gear" style="color: #ff0000;"></i> Customer Support Video
             </a>
             
+            <!-- CONTACT GRID (STATIC LINKS - NOT UPDATEABLE) -->
             <section class="contact-grid">
-                <a id="link-wa1" href="https://wa.me/+94726046605" target="_blank" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
-                <a id="link-wa2" href="https://wa.me/+94760929288" target="_blank" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
-                <a id="link-call1" href="tel:0572235168" class="btn-contact"><i class="fa-solid fa-phone" style="color:#34B7F1;"></i> Call</a>
-                <a id="link-call2" href="tel:0764659288" class="btn-contact"><i class="fa-solid fa-phone" style="color:#34B7F1;"></i> Call</a>
-                <a id="link-tg" href="https://t.me/Rayanmelbet" target="_blank" class="btn-contact"><i class="fa-brands fa-telegram" style="color:#229ED9;"></i> Telegram</a>
-                <a id="link-email" href="mailto:rranjirranji99@gmail.com" class="btn-contact"><i class="fa-regular fa-envelope" style="color:#EA4335;"></i> Email</a>
+                <a href="https://wa.me/+94726046605" target="_blank" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+                <a href="https://wa.me/+94760929288" target="_blank" class="btn-contact"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+                <a href="tel:0572235168" class="btn-contact"><i class="fa-solid fa-phone" style="color:#34B7F1;"></i> Call</a>
+                <a href="tel:0764659288" class="btn-contact"><i class="fa-solid fa-phone" style="color:#34B7F1;"></i> Call</a>
+                <a href="https://t.me/Rayanmelbet" target="_blank" class="btn-contact"><i class="fa-brands fa-telegram" style="color:#229ED9;"></i> Telegram</a>
+                <a href="mailto:rranjirranji99@gmail.com" class="btn-contact"><i class="fa-regular fa-envelope" style="color:#EA4335;"></i> Email</a>
                 <button onclick="openBankModal()" class="btn-contact"><i class="fa-solid fa-building-columns" style="color:#229ED9;"></i> Bank Details</button>
                 <button onclick="openWithdrawModal()" class="btn-contact" style="font-size: 0.85rem;"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal Details</button>
             </section>
             
             <hr>
 
-            <!-- SLIDER -->
+            <!-- SLIDER (UPDATED FROM FIREBASE) -->
             <div class="image-slider-container">
                 <img id="slide-img-1" src="https://i.postimg.cc/qRgyGLDd/1001107884.jpg" class="slide-image active">
                 <img id="slide-img-2" src="https://i.postimg.cc/qRgyGLDd/1001107884.jpg" class="slide-image">
@@ -151,20 +158,20 @@
                 <div class="promo-code"><i class="fa-solid fa-ticket"></i><span>Promo Code : <span class="promo-glow">RRANJI</span></span></div><i class="fa-regular fa-copy copy-icon"></i>
             </div>
             
-            <!-- QUICK REGISTRATION (ALL 10 BUTTONS RESTORED) -->
+            <!-- QUICK REGISTRATION (STATIC LINKS - NOT UPDATEABLE) -->
             <section>
                 <h2 class="section-title"><i class="fa-solid fa-link"></i> Quick Registration</h2>
                 <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
-                    <a id="reg-1xbet" href="https://affpa.top/L?tag=d_3661823m_1236c_&site=3661823&ad=1236" target="_blank" class="btn-full"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png"></a>
-                    <a id="reg-melbet" href="https://melbet-srilanka.com/en" target="_blank" class="btn-full"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png"></a>
-                    <a id="reg-winwin" href="https://refpa43000.com/L?tag=d_4580409m_68383c_&site=4580409&ad=68383" target="_blank" class="btn-full"><img src="https://i.postimg.cc/63kj3Zgz/1001104002.png"></a>
-                    <a id="reg-888" href="https://bonusweb.org/L?tag=d_3733444m_63543c_&site=3733444&ad=63543" target="_blank" class="btn-full"><img src="https://i.postimg.cc/s1FLMBv0/1001086974.png"></a>
-                    <a id="reg-gold" href="https://gpaff.top/L?tag=d_3998205m_69627c_&site=3998205&ad=69627" target="_blank" class="btn-full"><img src="https://i.postimg.cc/hGtrssVq/1001103956.webp"></a>
-                    <a id="reg-most" href="https://mostbet-sri-lanka.com/en/app/" target="_blank" class="btn-full"><img src="https://i.postimg.cc/c4GB20f9/1001103957.png"></a>
-                    <a id="reg-pari" href="https://refpa00186.com/L?tag=d_4634145m_64499c_&site=4634145&ad=64499&r=promotions/first-deposit" target="_blank" class="btn-full"><img src="https://i.postimg.cc/TYR74Xn7/1001086979.png"></a>
-                    <a id="reg-cold" href="https://coldredir.com/L?tag=d_4780204m_126631c_&site=4780204&ad=126631" target="_blank" class="btn-full"><img src="https://i.postimg.cc/bY4LH16L/1001103982.png"></a>
-                    <a id="reg-db" href="#" target="_blank" class="btn-full"><img src="https://i.postimg.cc/8CCnnNLM/1001103999.png"></a>
-                    <a id="reg-line" href="#" target="_blank" class="btn-full"><img src="https://i.postimg.cc/pXThTSQ1/1001104005.png"></a>
+                    <a href="https://affpa.top/L?tag=d_3661823m_1236c_&site=3661823&ad=1236" target="_blank" class="btn-full"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png"></a>
+                    <a href="https://melbet-srilanka.com/en" target="_blank" class="btn-full"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png"></a>
+                    <a href="https://refpa43000.com/L?tag=d_4580409m_68383c_&site=4580409&ad=68383" target="_blank" class="btn-full"><img src="https://i.postimg.cc/63kj3Zgz/1001104002.png"></a>
+                    <a href="https://bonusweb.org/L?tag=d_3733444m_63543c_&site=3733444&ad=63543" target="_blank" class="btn-full"><img src="https://i.postimg.cc/s1FLMBv0/1001086974.png"></a>
+                    <a href="https://gpaff.top/L?tag=d_3998205m_69627c_&site=3998205&ad=69627" target="_blank" class="btn-full"><img src="https://i.postimg.cc/hGtrssVq/1001103956.webp"></a>
+                    <a href="https://mostbet-sri-lanka.com/en/app/" target="_blank" class="btn-full"><img src="https://i.postimg.cc/c4GB20f9/1001103957.png"></a>
+                    <a href="https://refpa00186.com/L?tag=d_4634145m_64499c_&site=4634145&ad=64499&r=promotions/first-deposit" target="_blank" class="btn-full"><img src="https://i.postimg.cc/TYR74Xn7/1001086979.png"></a>
+                    <a href="https://coldredir.com/L?tag=d_4780204m_126631c_&site=4780204&ad=126631" target="_blank" class="btn-full"><img src="https://i.postimg.cc/bY4LH16L/1001103982.png"></a>
+                    <a href="#" target="_blank" class="btn-full"><img src="https://i.postimg.cc/8CCnnNLM/1001103999.png"></a>
+                    <a href="#" target="_blank" class="btn-full"><img src="https://i.postimg.cc/pXThTSQ1/1001104005.png"></a>
                 </div>
             </section>
 
@@ -174,25 +181,18 @@
         </main>
     </div>
     
-    <!-- BANK MODAL (RESTORED DATA) -->
+    <!-- BANK MODAL (UPDATED FROM FIREBASE) -->
     <div id="bankModal" class="modal-overlay" onclick="closeBankModal(event)"><div class="modal-content"><div class="modal-header"><div class="modal-title"><i class="fa-solid fa-wallet"></i> Bank Details</div><button class="close-btn" onclick="closeBankModalBtn()"><i class="fa-solid fa-xmark"></i></button></div><div class="bank-list">
-        <!-- BOC -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/8zNs8BVh/1001100467.jpg" class="bank-logo"><span class="bank-name-title">Bank of Ceylon</span></div><div class="acc-details-box"><span class="acc-number" id="boc-acc">95395687</span><button id="btn-boc" class="btn-copy-bank" onclick="copyToClipboard('95395687', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-boc-name" class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">Name: <span id="boc-name">R W S A PRASHAD</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-boc-branch" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">Branch: <span id="boc-branch">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- Peoples -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/nzyc3qkv/1001100473.jpg" class="bank-logo"><span class="bank-name-title">People's Bank</span></div><div class="acc-details-box"><span class="acc-number" id="peoples-acc">037200780013817</span><button id="btn-peoples" class="btn-copy-bank" onclick="copyToClipboard('037200780013817', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-peoples-name" class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">Name: <span id="peoples-name">R W S A PRASHAD</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-peoples-branch" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">Branch: <span id="peoples-branch">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- NSB -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/SNHnqpd0/1001105317.jpg" class="bank-logo"><span class="bank-name-title">NSB Bank</span></div><div class="acc-details-box"><span class="acc-number" id="nsb-acc">300110188726</span><button id="btn-nsb" class="btn-copy-bank" onclick="copyToClipboard('300110188726', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-nsb-name" class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">Name: <span id="nsb-name">R W S A PRASHAD</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-nsb-branch" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">Branch: <span id="nsb-branch">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- Sampath -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/44SdbTr3/1001105324.jpg" class="bank-logo"><span class="bank-name-title">Sampath Bank</span></div><div class="acc-details-box"><span class="acc-number" id="sampath-acc">104655209763</span><button id="btn-sampath" class="btn-copy-bank" onclick="copyToClipboard('104655209763', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-sampath-name" class="detail-row" onclick="copyToClipboard('R W S A PRASHAD', this)">Name: <span id="sampath-name">R W S A PRASHAD</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-sampath-branch" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">Branch: <span id="sampath-branch">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- iPay -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/cLBg6kmg/1001100468.jpg" class="bank-logo"><span class="bank-name-title">iPay</span></div><div class="acc-details-box"><span class="acc-number" id="ipay-acc">0726046605</span><button id="btn-ipay" class="btn-copy-bank" onclick="copyToClipboard('0726046605', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-ipay-name" class="detail-row" onclick="copyToClipboard('R Ranji', this)">Name: <span id="ipay-name">R Ranji</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- Ez Cash -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/j5RW9Qh9/1001105316.jpg" class="bank-logo"><span class="bank-name-title">Ez Cash</span></div><div class="acc-details-box"><span class="acc-number" id="ez-acc">0760929288</span><button id="btn-ez" class="btn-copy-bank" onclick="copyToClipboard('0760929288', this)"><i class="fa-regular fa-copy"></i></button></div><div class="bank-extra-details"><div id="btn-ez-name" class="detail-row" onclick="copyToClipboard('R Ranji', this)">Name: <span id="ez-name">R Ranji</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
-        <!-- Binance -->
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/gJcJ4czb/1001105318.jpg" class="bank-logo"><span class="bank-name-title">Binance</span></div><div class="acc-details-box"><span class="acc-number" id="bin-acc">985422926</span><button id="btn-bin" class="btn-copy-bank" onclick="copyToClipboard('985422926', this)"><i class="fa-regular fa-copy"></i></button></div></div>
     </div></div></div>
 
-    <!-- WITHDRAW MODAL (RESTORED DATA) -->
+    <!-- WITHDRAW MODAL (UPDATED FROM FIREBASE) -->
     <div id="withdrawModal" class="modal-overlay" onclick="closeWithdrawModal(event)"><div class="modal-content"><div class="modal-header"><div class="modal-title"><i class="fa-solid fa-money-bill-transfer" style="color:#FFD700;"></i> Withdrawal Details</div><button class="close-btn" onclick="closeWithdrawModalBtn()"><i class="fa-solid fa-xmark"></i></button></div><div class="bank-list">
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/pXJNmZJw/1001086972.png" class="bank-logo"><span class="bank-name-title">1xBet Cash</span></div><div class="bank-extra-details" style="margin-top: 10px;"><div id="btn-1x-city" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">City: <span id="1x-city">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-1x-st" class="detail-row" onclick="copyToClipboard('R.Ranji and R.Ravi', this)">Street: <span id="1x-st">R.Ranji and R.Ravi</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
         <div class="bank-item"><div class="bank-top"><img src="https://i.postimg.cc/wBtbQcLk/1001086973.png" class="bank-logo"><span class="bank-name-title">Melbet Cash</span></div><div class="bank-extra-details" style="margin-top: 10px;"><div id="btn-mel-city" class="detail-row" onclick="copyToClipboard('Bandarawela', this)">City: <span id="mel-city">Bandarawela</span><i class="fa-regular fa-copy small-copy-icon"></i></div><div id="btn-mel-st" class="detail-row" onclick="copyToClipboard('Bandarawela, Galahitiyava Road', this)">Street: <span id="mel-st">Bandarawela, Galahitiyava Road</span><i class="fa-regular fa-copy small-copy-icon"></i></div></div></div>
@@ -212,7 +212,16 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
         import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 
-        const firebaseConfig = { apiKey: "AIzaSyAFQWGtRwfsvAM_nzdjP-tDsIkDNFwP14o", authDomain: "ranja-4b403.firebaseapp.com", databaseURL: "https://ranja-4b403-default-rtdb.firebaseio.com", projectId: "ranja-4b403", storageBucket: "ranja-4b403.firebasestorage.app", messagingSenderId: "139277942382", appId: "1:139277942382:web:451dcd708dacb2616d307f", measurementId: "G-55BDLL4EHP" };
+        const firebaseConfig = {
+            apiKey: "AIzaSyAGUkogvKEdDzWv9gtIDCfUwQsTo9j16eM",
+            authDomain: "nishan-b1461.firebaseapp.com",
+            databaseURL: "https://nishan-b1461-default-rtdb.firebaseio.com",
+            projectId: "nishan-b1461",
+            storageBucket: "nishan-b1461.firebasestorage.app",
+            messagingSenderId: "299830303174",
+            appId: "1:299830303174:web:002b0ef148810a95e1fac7",
+            measurementId: "G-C8PBTHZ8NF"
+        };
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
 
@@ -232,20 +241,7 @@
                 if(data.sliderImages.img4) document.getElementById('slide-img-4').src = data.sliderImages.img4;
             }
 
-            // 3. Contact Links
-            if(data.links) {
-                if(data.links.wa1) document.getElementById('link-wa1').href = data.links.wa1;
-                if(data.links.wa2) document.getElementById('link-wa2').href = data.links.wa2;
-                if(data.links.call1) document.getElementById('link-call1').href = data.links.call1;
-                if(data.links.call2) document.getElementById('link-call2').href = data.links.call2;
-                if(data.links.tg) document.getElementById('link-tg').href = data.links.tg;
-                if(data.links.email) document.getElementById('link-email').href = data.links.email;
-                if(data.links.fb) document.getElementById('link-fb').href = data.links.fb;
-                if(data.links.yt) document.getElementById('link-yt').href = data.links.yt;
-                if(data.links.vid) document.getElementById('link-vid').href = data.links.vid;
-            }
-
-            // 4. Bank Details
+            // 3. Bank Details
             const updateTxtAndClick = (txtId, btnId, val) => { if(val && document.getElementById(txtId)) { document.getElementById(txtId).innerText = val; if(document.getElementById(btnId)) { document.getElementById(btnId).setAttribute('onclick', `copyToClipboard('${val}', this)`); } } };
             if(data.banks) {
                 updateTxtAndClick('boc-acc', 'btn-boc', data.banks.boc_acc); updateTxtAndClick('boc-name', 'btn-boc-name', data.banks.boc_name); updateTxtAndClick('boc-branch', 'btn-boc-branch', data.banks.boc_branch);
@@ -257,7 +253,7 @@
                 updateTxtAndClick('bin-acc', 'btn-bin', data.banks.bin_acc);
             }
 
-            // 5. Withdrawals
+            // 4. Withdrawals
             if(data.withdraw) {
                 updateTxtAndClick('1x-city', 'btn-1x-city', data.withdraw.x_city); updateTxtAndClick('1x-st', 'btn-1x-st', data.withdraw.x_st);
                 updateTxtAndClick('mel-city', 'btn-mel-city', data.withdraw.mel_city); updateTxtAndClick('mel-st', 'btn-mel-st', data.withdraw.mel_st);
@@ -270,26 +266,25 @@
                 updateTxtAndClick('cold-city', 'btn-cold-city', data.withdraw.cold_city); updateTxtAndClick('cold-st', 'btn-cold-st', data.withdraw.cold_st);
                 updateTxtAndClick('line-city', 'btn-line-city', data.withdraw.line_city); updateTxtAndClick('line-st', 'btn-line-st', data.withdraw.line_st);
             }
-
-            // 6. Registration Links
-            if(data.regLinks) {
-                if(data.regLinks.link_1x) document.getElementById('reg-1xbet').href = data.regLinks.link_1x;
-                if(data.regLinks.link_mel) document.getElementById('reg-melbet').href = data.regLinks.link_mel;
-                if(data.regLinks.link_win) document.getElementById('reg-winwin').href = data.regLinks.link_win;
-                if(data.regLinks.link_888) document.getElementById('reg-888').href = data.regLinks.link_888;
-                if(data.regLinks.link_gold) document.getElementById('reg-gold').href = data.regLinks.link_gold;
-                if(data.regLinks.link_most) document.getElementById('reg-most').href = data.regLinks.link_most;
-                if(data.regLinks.link_pari) document.getElementById('reg-pari').href = data.regLinks.link_pari;
-                if(data.regLinks.link_cold) document.getElementById('reg-cold').href = data.regLinks.link_cold;
-                if(data.regLinks.link_db) document.getElementById('reg-db').href = data.regLinks.link_db;
-                if(data.regLinks.link_line) document.getElementById('reg-line').href = data.regLinks.link_line;
-            }
         });
     </script>
 
     <script>
         window.addEventListener('load', () => { const introOverlay = document.getElementById('intro-overlay'); setTimeout(() => { introOverlay.classList.add('intro-hidden'); }, 2500); });
-        let slideIndex = 0; function showSlides() { const slides = document.querySelectorAll('.slide-image'); if(slides.length === 0) return; for (let i = 0; i < slides.length; i++) { slides[i].classList.remove('active'); } slideIndex++; if (slideIndex > slides.length) {slideIndex = 1} slides[slideIndex-1].classList.add('active'); setTimeout(showSlides, 5000); } showSlides();
+        
+        // Updated SlideShow (3 seconds interval)
+        let slideIndex = 0; 
+        function showSlides() { 
+            const slides = document.querySelectorAll('.slide-image'); 
+            if(slides.length === 0) return; 
+            for (let i = 0; i < slides.length; i++) { slides[i].classList.remove('active'); } 
+            slideIndex++; 
+            if (slideIndex > slides.length) {slideIndex = 1} 
+            slides[slideIndex-1].classList.add('active'); 
+            setTimeout(showSlides, 3000); // Changed to 3000ms (3 seconds)
+        } 
+        showSlides();
+
         function copyToClipboard(text, element) { let icon; if(element.classList.contains('detail-row')) { icon = element.querySelector('.small-copy-icon'); } else if(element.classList.contains('btn-copy-bank')) { icon = element.querySelector('i'); } else if(element.classList.contains('copy-icon')) { icon = element; } else if (element.querySelector('.copy-icon')) { icon = element.querySelector('.copy-icon'); } else if (element.querySelector('i')) { icon = element.querySelector('i'); } else { icon = element; } if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(() => { showToastAndIcon(icon, text); }); } else { fallbackCopyTextToClipboard(text, icon); } }
         function fallbackCopyTextToClipboard(text, icon) { var textArea = document.createElement("textarea"); textArea.value = text; document.body.appendChild(textArea); textArea.focus(); textArea.select(); try { document.execCommand('copy'); showToastAndIcon(icon, text); } catch (err) {} document.body.removeChild(textArea); }
         function showToastAndIcon(icon, text) { if(!icon) return; const originalClass = icon.className; icon.className = icon.classList.contains('small-copy-icon') ? "fa-solid fa-check small-copy-icon" : "fa-solid fa-check"; icon.style.color = "#25d366"; const toast = document.getElementById("toast"); toast.textContent = text.length > 15 ? "Copied!" : '"' + text + '" Copied!'; toast.className = "show"; setTimeout(function(){ toast.className = toast.className.replace("show", ""); icon.className = originalClass; icon.style.color = ""; }, 2000); }
